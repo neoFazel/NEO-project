@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- style sheet -->
+    <link rel="stylesheet" href="src/syles.css">
+    <!-- bootstarp icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <title>آریو کالا فروشگاه لپ تاپ در خانه شما</title>
+</head>
+<body>
+    
+    <!-- navbar for mobile screens-->
+    <nav class="navbar" id="navbar">
+        <!-- search box, logo, cart icon, links category -->
+        <section class="nav-container" id="nav-container">
+            <div class="logo-seachbox-carticon">
+                <div class="logo-cart-container">
+                    <div class="nav-one-cart-icon">
+                        <div class="cart-container">
+                            <i class="bi bi-cart3"></i>
+                            <span>1</span>
+                        </div>
+                    </div>
+                    <div class="nav-logo-bar" id="nav-logo-bar">
+                        <a href="main.html">
+                            <h1 class="logo-nav" id="logo-nav">
+                              <span>Ario</span>Kala
+                            </h1>
+                        </a>
+                        <button class="nav-toggle" id="nav-toggle">
+                            <i class="bi bi-list"></i>
+                        </button>
+                    </div>
+                </div>                <div class="nav-one-search-box" >
+                    <input class="search-nav" id="search-nav" type="text" placeholder="...جستجو">
+                    <button id="nav-search-btn" class="nav-search-btn">
+                        <i class="bi bi-search"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class=" nav-links-container" id="nav-links-container">
+                <div class="mobile-nav-title-xBtn-container">
+                    <button class="close-mobile-nav-btn" id="close-mobile-nav-btn">
+                        <i class="bi bi-x-lg"></i>
+                    </button>
+                    <h2 class="mobile-nav-title"><span>آریو</span>کالا </h2>
+                </div>
+                <hr>
+                <ul class="links" id="links">
+                    <li class="link dropdown-container" id="product-category">
+                        <div class="link-title-container">
+
+                            <p class="link-title" href="">
+                                <button id="dropdown-btn" class="dropdown-btn">
+                                        دسته بندی آریوکالا<i class="bi bi-shop-window"></i>
+                                </button>
+                            </p>
+                        </div>
+                        <!-- link dropdown content -->
+                        <div class="dropdown-content">
+                            <a href="">test1</a>
+                            <a href="">test2</a>
+                            <a href="">test3</a>
+                        </div>
+                    </li>
+                    <li class="link dropdown-container" id="product-category">
+                        <div class="link-title.container">
+
+                            <p class="link-title" href="">
+                                <button id="dropdown-btn" class="dropdown-btn">
+                                   دسته بندی قیمت<i class="bi bi-bag-heart"></i>
+                                </button>
+                            </p>
+                        </div>
+                        <!-- link dropdown content -->
+                        <div class="dropdown-content">
+                            <a href="">test1</a>
+                            <a href="">test2</a>
+                            <a href="">test3</a>
+                        </div>
+                    </li>
+                    <li class="link" id="best sales">
+                        <a class="link-title" href="">تخفیف خورده ها<i class="bi bi-award"></i></a>
+                    </li>
+                </ul>
+                <hr>
+            </div>
+        </section>
+    </nav>
+
+    <!-- slide show section  -->
+    <section class="slideshow" id="slideshow">
+        <div class="slides-container" id="slides-container">
+
+            <!-- content in this div added dynamicly with javascript -->
+            
+        </div>
+        <div class="slideshow-btns" id="slideshow-btns">
+            <span class="prev-slideshow-btn">&#10094</span>
+            <span class="next-slideshow-btn">&#10095</span>
+        </div>
+        <div class="points">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </section>
+    <hr>
+
+    <!-- ourPerks section shows someof addtional desc about how the services are -->
+    <section class="ourPerks">
+        <div class="ourPerks-container">
+            <!-- content in this sectoin added dynamicly -->
+        </div>
+    </section><hr><br><br><br>
+
+    <!-- below is a slider which added dynamicly and show off the best sells-->
+   
+</body>
+<script src="./src/dataBase.js"></script>
+<script src="./src/main.js"></script>
+</html>
