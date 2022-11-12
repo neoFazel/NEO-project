@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- style sheet -->
+    <link rel="stylesheet" href="src/syles.css">
+    <!-- bootstarp icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <title>آریو کالا/سبد خرید</title>
+</head>
+<body>
+<!-- nav -->
+    <nav class="cart-nav">
+        <div class="container">
+            <div class="cart-container">
+                <a href="cart.html" >
+                    <button style="cursor: pointer;" class="cart-btn" id="total-amount">
+                        <i class="bi bi-cart3"></i>
+                        <span class="number-icon">0</span>
+                    </button>
+                </a>
+            </div>
+            <a href="main.html"><p class="title"><span>آریو</span>کالا</p></a>
+        </div>
+    </nav>
+
+<!-- shop cart  -->
+    <main class="cart-shop-main">
+        <div class="title">
+            <h1 class="text" style="text-align: center;">سبد خرید شما</h1>
+            <div class="title-underline"></div>
+        </div>
+        <div class="cart-items"></div>
+        <div class="cart-bill"></div>
+        <div class="fixed-bill"></div>
+    </main>
+
+
+
+</body>
+<script src="src/dataBase.js"></script>
+<script src="./src/cart.js"></script>
+</html>

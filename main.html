@@ -11,7 +11,6 @@
     <title>آریو کالا فروشگاه لپ تاپ در خانه شما</title>
 </head>
 <body>
-    
     <!-- navbar for mobile screens-->
     <nav class="navbar" id="navbar">
         <!-- search box, logo, cart icon, links category -->
@@ -20,8 +19,12 @@
                 <div class="logo-cart-container">
                     <div class="nav-one-cart-icon">
                         <div class="cart-container">
-                            <i class="bi bi-cart3"></i>
-                            <span>1</span>
+                            <a href="cart.html" >
+                                <button style="cursor: pointer;" class="cart-btn" id="total-amount">
+                                    <i class="bi bi-cart3"></i>
+                                    <span class="number-icon">0</span>
+                                </button>
+                            </a>
                         </div>
                     </div>
                     <div class="nav-logo-bar" id="nav-logo-bar">
@@ -34,7 +37,8 @@
                             <i class="bi bi-list"></i>
                         </button>
                     </div>
-                </div>                <div class="nav-one-search-box" >
+                </div>                
+                <div class="nav-one-search-box" >
                     <input class="search-nav" id="search-nav" type="text" placeholder="...جستجو">
                     <button id="nav-search-btn" class="nav-search-btn">
                         <i class="bi bi-search"></i>
@@ -116,11 +120,58 @@
         <div class="ourPerks-container">
             <!-- content in this sectoin added dynamicly -->
         </div>
-    </section><hr><br><br><br>
+    </section><hr>
 
     <!-- below is a slider which added dynamicly and show off the best sells-->
-   
+    <section class="best-sell-slider">
+        <div class="bss-container">
+            <div class="bss-items-container">
+                    <button class="bss-btns" type="button" id="bss-prev-btn" onclick="prev()">&lt</button>
+                    <button class="bss-btns" type="button" id="bss-next-btn" onclick="next()">&gt</button>
+                <div class="bss-main" id="bss-main">
+                    <!-- bss items added dynamicly -->
+                </div>
+            </div>
+            <div class="bss-title">
+                <div class="bss-title-main">
+                    <img src="src/images/bss-image.png" height="200vh" alt="">
+                </div>
+                <h3 class="bss-title-link">
+                    <a href="">
+                        &#8592 مشاهده همه
+                    </a>
+                </h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- popup which appers when click on a product and show its description and price-->
+    <section id="product-popup" class="product-popup">
+        <div class="popup-container">
+            <div class="close-btn">
+                <p id="x-btn-popup">&times</p>
+            </div>  
+        <div class="popup-parts">
+            <!-- this section added dynamicly with javascript -->
+        </div>
+        </div>
+    </section>
+
+    <!-- categorize ario kala product -->
+    <h1 style="text-align: center;margin-top: 3rem;">فروشگاه آریو کالا</h1>
+    <div  class="title-underline"></div>
+    <main class="main-shop" id="main-shop">
+        <div class="shop-container" id="shop-container">
+            <div class="shop-brand-btns" id="brand-btns">
+                <!-- added dynamicly -->
+            </div>
+            <div class="shop-items-container" id="items-container">
+                <!-- shop items container -->
+            </div>
+        </div>
+    </main>
 </body>
 <script src="./src/dataBase.js"></script>
 <script src="./src/main.js"></script>
+<script src="./src/cart.js"></script>
 </html>
